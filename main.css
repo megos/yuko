@@ -15,6 +15,15 @@ body {
   overflow: hidden;
 }
 
+.toggle-button {
+  position: fixed;
+  margin: 16px;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 50px;
+}
+
 .neon {
   color: #fff;
   background-color: var(--cover-color);
@@ -22,11 +31,14 @@ body {
   border: 8px solid #fff;
   border-radius: 32px;
   padding: 8px;
-  animation: neon-flash 0.5s ease-in 2s forwards;
 }
 
-.text {
-  animation: text-flash 0.5s ease-in 2s forwards;
+.neon.on {
+  animation: neon-flash 0.5s ease-in 0s forwards;
+}
+
+.neon.on > .text {
+  animation: text-flash 0.5s ease-in 0s forwards;
 }
 
 .title1 {
