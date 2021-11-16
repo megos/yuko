@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const on = () => {
     neon.classList.add("on");
-    toggleButton.innerHTML = "閉店";
+    toggleButton.innerHTML = "ブゥン";
   };
   const off = () => {
     neon.classList.remove("on");
